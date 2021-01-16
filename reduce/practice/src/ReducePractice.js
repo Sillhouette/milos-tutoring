@@ -13,24 +13,30 @@ function concatString(items) {
 
 }
 
-// 4. Create a function that takes an array of voter objects and totals the
+// 4. Create a function that takes an array of items and a seperator then concatenates 
+//   them with a seperator between each item. Seperator should not be added to the last item
+function concatStringWithSeperator(items, seperator) {
+    
+}
+
+// 5. Create a function that takes an array of voter objects and totals the
 //    number of people who have already voted
 function totalVotes(voters) {
-
+    
 }
 
-// 5. Create a function that takes an array of wishlist items and totals the prices
+// 6. Create a function that takes an array of wishlist items and totals the prices
 function shoppingSpree(wishlist) {
-
+    
 }
 
-// 6. Create a function that takes an array of arrays and joins them into a single array
+// 7. Create a function that takes an array of arrays and joins them into a single array
 // Note: Take a look at Array.concat() to help with this one
 function flatten(nestedArrays) {
-
+    
 }
 
-// 7. Given an array of potential voters, return an object representing the results of the vote
+// 8. Given an array of potential voters, return an object representing the results of the vote
 //    Include how many of the potential voters were in the ages 18-25, how many from 26-35, 
 //    how many from 36-55, and how many of each of those age ranges actually voted. 
 //    The resulting object containing this data should have 6 properties. 
@@ -42,6 +48,7 @@ module.exports = {
     total,
     product,
     concatString,
+    concatStringWithSeperator,
     totalVotes,
     shoppingSpree,
     flatten,
