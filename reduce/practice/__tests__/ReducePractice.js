@@ -1,11 +1,18 @@
 const practice = require('../src/ReducePractice')
 
 describe('Reduce Practice', () => {
+    let reduceSpy
+
+    afterEach(() => {
+        reduceSpy.mockClear()
+    })
+
     describe('total', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.total([])
+            practice.total(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
@@ -40,9 +47,10 @@ describe('Reduce Practice', () => {
 
     describe('product', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.product([])
+            practice.product(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
@@ -77,9 +85,10 @@ describe('Reduce Practice', () => {
 
     describe('concatString', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.concatString([])
+            practice.concatString(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
@@ -123,9 +132,10 @@ describe('Reduce Practice', () => {
 
     describe('concatStringWithSeperator', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.concatStringWithSeperator([])
+            practice.concatStringWithSeperator(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
@@ -192,9 +202,10 @@ describe('Reduce Practice', () => {
 
     describe('totalVotes', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.totalVotes([])
+            practice.totalVotes(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
@@ -255,9 +266,10 @@ describe('Reduce Practice', () => {
 
     describe('shoppingSpree', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.shoppingSpree([])
+            practice.shoppingSpree(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
@@ -315,9 +327,10 @@ describe('Reduce Practice', () => {
 
     describe('flatten', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.flatten([])
+            practice.flatten(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
@@ -347,9 +360,10 @@ describe('Reduce Practice', () => {
 
     describe('voterResults', () => {
         test('calls reduce', () => {
-            const reduceSpy = jest.spyOn(Array.prototype, "reduce")
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.voterResults([])
+            practice.voterResults(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
