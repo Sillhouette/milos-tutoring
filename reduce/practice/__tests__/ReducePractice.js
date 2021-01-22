@@ -8,14 +8,6 @@ describe('Reduce Practice', () => {
     })
 
     describe('total', () => {
-        test('calls reduce', () => {
-            const array = []
-            reduceSpy = jest.spyOn(array, "reduce")
-
-            practice.total(array)
-
-            expect(reduceSpy).toHaveBeenCalled()
-        })
 
         test('returns 0 when passed []', () => {
             const numbers = []
@@ -43,17 +35,18 @@ describe('Reduce Practice', () => {
             
             expect(result).toEqual(expected)
         })
-    })
 
-    describe('product', () => {
         test('calls reduce', () => {
             const array = []
             reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.product(array)
+            practice.total(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
+    })
+
+    describe('product', () => {
 
         test('returns 0 when passed []', () => {
             const numbers = []
@@ -81,17 +74,18 @@ describe('Reduce Practice', () => {
             
             expect(result).toEqual(expected)
         })
-    })
 
-    describe('concatString', () => {
         test('calls reduce', () => {
             const array = []
             reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.concatString(array)
+            practice.product(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
+    })
+
+    describe('concatString', () => {
 
         test('returns "" when passed []', () => {
             const numbers = []
@@ -128,17 +122,18 @@ describe('Reduce Practice', () => {
             
             expect(result).toEqual(expected)
         })
-    })
 
-    describe('concatStringWithSeperator', () => {
         test('calls reduce', () => {
             const array = []
             reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.concatStringWithSeperator(array)
+            practice.concatString(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
+    })
+
+    describe('concatStringWithSeperator', () => {
 
         test('returns "" when passed [] and ", "', () => {
             const array = []
@@ -198,17 +193,18 @@ describe('Reduce Practice', () => {
             
             expect(result).toEqual(expected)
         })
-    })
 
-    describe('totalVotes', () => {
         test('calls reduce', () => {
             const array = []
             reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.totalVotes(array)
+            practice.concatStringWithSeperator(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
+    })
+
+    describe('totalVotes', () => {
 
         test("returns 0 when passed []", () => {
             const voters = []
@@ -262,17 +258,18 @@ describe('Reduce Practice', () => {
             
             expect(result).toEqual(expected)
         })
-    })
 
-    describe('shoppingSpree', () => {
         test('calls reduce', () => {
             const array = []
             reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.shoppingSpree(array)
+            practice.totalVotes(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
+    })
+
+    describe('shoppingSpree', () => {
 
         test('returns 0 if no items are on the wishlist', () => {
             const wishlist = []
@@ -323,17 +320,18 @@ describe('Reduce Practice', () => {
             
             expect(result).toEqual(expected)
         })
-    })
 
-    describe('flatten', () => {
         test('calls reduce', () => {
             const array = []
             reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.flatten(array)
+            practice.shoppingSpree(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
+    })
+
+    describe('flatten', () => {
 
         test('returns [] when given []', () => {
             const arrays = []
@@ -356,17 +354,18 @@ describe('Reduce Practice', () => {
             
             expect(result).toEqual(expected)
         })
-    })
 
-    describe('voterResults', () => {
         test('calls reduce', () => {
             const array = []
             reduceSpy = jest.spyOn(array, "reduce")
 
-            practice.voterResults(array)
+            practice.flatten(array)
 
             expect(reduceSpy).toHaveBeenCalled()
         })
+    })
+
+    describe('voterResults', () => {
 
         test('returns counts of 0 if passed an empty array', () => {
             const voters = []
@@ -411,6 +410,15 @@ describe('Reduce Practice', () => {
             const result = practice.voterResults(voters)
             
             expect(result).toEqual(expected)
+        })
+
+        test('calls reduce', () => {
+            const array = []
+            reduceSpy = jest.spyOn(array, "reduce")
+    
+            practice.voterResults(array)
+    
+            expect(reduceSpy).toHaveBeenCalled()
         })
     })
 })
